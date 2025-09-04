@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-color: #f7f7f7;
+  color: #111;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Figtree', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+
+.navbar {
+  width: 80%;
+  height: 65px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 16px;
+  margin: 24px auto 0 auto;
+  max-width: 98vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  box-shadow: 0 4px 24px rgba(60, 60, 120, 0.08);
+  z-index: 10;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #2c2c54;
+}
+
+.logo img {
+  height: 45px;
+  width: 153px;
+}
+
+.initiative {
+  font-size: 0.95rem;
+  color: #4e5d6c;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.initiative img {
+  height: 68px;
+  width: 173px;
+  margin-right: -34px;
+}
+
+
+.main-container {
+  min-height: calc(100vh - 113px);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.main-logo {
+  width: 596px; 
+  max-width: 90vw;
+  margin-bottom: 25px;
+}
+
+.content .description {
+  max-width: 832px;
+  margin-bottom: 20px;
+ 
+}
+
+
+
+/* Desktop: max-width 1200px */
+@media (max-width: 1200px) {
+  .navbar {
+    width: 95vw;
+    max-width: 99vw;
+    padding: 12px 18px;
+    font-size: 1.05rem;
+  }
+  .logo img {
+    height: 38px;
+    width: auto;
+  }
+  .initiative img {
+    height: 48px;
+    width: auto;
+    margin-right: -10px;
+  }
+  .main-container {
+    min-height: calc(100vh - 90px);
+    width: 100vw;
+    padding: 0;
+  }
+  .main-logo {
+    width: 320px;
+    max-width: 70vw;
+    margin-bottom: 18px;
+  }
+  .content .description {
+    font-size: 16px;
+    max-width: 90vw;
+    margin-bottom: 16px;
+  }
+}
+
+/* Tablet: max-width 1199px */
+@media (max-width: 1199px) {
+  .navbar {
+    width: 97vw;
+    max-width: 99vw;
+    padding: 10px 12px;
+    font-size: 1rem;
+  }
+  .logo img {
+    height: 32px;
+    width: auto;
+  }
+  .initiative img {
+    height: 38px;
+    width: auto;
+    margin-right: -8px;
+  }
+  .main-container {
+    min-height: calc(100vh - 70px);
+    width: 100vw;
+    padding: 0;
+  }
+  .main-logo {
+    width: 120px;
+    max-width: 60vw;
+    margin-bottom: 14px;
+  }
+  .content .description {
+    font-size: 15px;
+    max-width: 95vw;
+    margin-bottom: 12px;
+  }
+}
+
+/* Mobile: max-width 425px */
+@media (max-width: 425px) {
+  .navbar {
+    width: 98vw;
+    max-width: 99vw;
+    height: 56px;
+    padding: 6px 8px;
+    margin-top: 10px;
+    border-radius: 14px;
+    font-size: 1rem;
+  }
+  .logo img {
+    height: 28px;
+    width: auto;
+  }
+  .logo {
+    font-size: 15px;
+    gap: 5px;
+  }
+  .initiative {
+    font-size: 0.85rem;
+    gap: 5px;
+  }
+  .initiative img {
+    height: 28px;
+    width: auto;
+    margin-right: 0;
+  }
+  .main-container {
+    min-height: calc(100vh - 60px);
+    width: 100vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    margin-top: 0;
+    padding: 0 6px;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-logo {
+    width: 80px;
+    max-width: 60vw;
+    margin-bottom: 10px;
+  }
+  .brand-title {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .content .description {
+    font-size: 12px;
+    max-width: 95vw;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .launching {
+    font-size: 1rem !important;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+  .background-shapes img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
